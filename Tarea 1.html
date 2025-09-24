@@ -27,17 +27,15 @@
       etiquetas HTML
     </p>
 
-    <h2>¿Cuáles son esas etiquetas?</h2>
-
-    <ul style="font-family: Arial, Helvetica, sans-serif">
-      <li>Etiquetas de estructura básica</li>
-      <li>Etiquetas de estructura de sección</li>
-      <li>Etiquetas de estructura de grupo</li>
-      <li>Etiquetas de texto</li>
-      <li>Etiquetas de enlace</li>
-      <li>Etiquetas de imagen</li>
-      <li>Etiquetas de miltimedia</li>
-    </ul>
+    <hgroup>
+      <pre>Estoy utilizando un hgroup aqui</pre>
+      <h1>Etiqueta H1</h1>
+      <h2>Etiqueta H2</h2>
+      <h3>Etiqueta H3</h3>
+      <h4>Etiqueta H4</h4>
+      <h5>Etiqueta H5</h5>
+      <h6>Etiqueta H6</h6>
+    </hgroup>
 
     <pre style="font-family: Arial, Helvetica, sans-serif">
 ¿Qué son?:
@@ -55,10 +53,6 @@ web, para el diseño se utiliza css
 </pre
     >
 
-    <h1>
-      De esta forma, he experimentado con esta tarea, dandome cuenta de como se
-      pueden trabajar diferentes etiquetas
-    </h1>
     <div style="background-color: lightgray; padding: 10px; text-align: center">
       <img
         src="Imagenes/image.png"
@@ -68,23 +62,213 @@ web, para el diseño se utiliza css
         style="text-align: center"
       />
     </div>
+    <div style="text-align: center">
+      <iframe
+        src="https://www.youtube.com/embed/PEHb2GptQkw"
+        width="560"
+        height="315"
+        frameborder="0"
+        allowfullscreen
+        style="text-align: center"
+      >
+      </iframe>
+    </div>
+
+    <h1>Etiquetas de estructura de grupo</h1>
+
+    <h2>¿Cuáles son esas etiquetas?</h2>
+
+    <ul style="font-family: Arial, Helvetica, sans-serif">
+      <li>Etiquetas de estructura básica</li>
+      <li>Etiquetas de estructura de sección</li>
+      <li>Etiquetas de estructura de grupo</li>
+      <li>Etiquetas de texto</li>
+      <li>Etiquetas de enlace</li>
+      <li>Etiquetas de imagen</li>
+      <li>Etiquetas de miltimedia</li>
+    </ul>
+
+    <ol>
+      <li>Primer elemento</li>
+      <li>Segundo elemento</li>
+      <li>Tercer elemento</li>
+    </ol>
+
+    <dl>
+      <dt>Término 1</dt>
+      <dd>Descripción del término 1.</dd>
+
+      <dt>Término 2</dt>
+      <dd>Descripción del término 2.</dd>
+    </dl>
+
+    <figure>
+      <img src="Imagenes/image.png" alt="Ejemplo de figura" width="300" />
+      <figcaption>Ejemplo de figure y figcaption</figcaption>
+    </figure>
+
+    <details>
+      <summary>Ver más información sobre HTML</summary>
+      <p>
+        HTML significa HyperText Markup Language y se usa para estructurar
+        contenido en la web.
+      </p>
+    </details>
+
+    <dialog id="miDialogo">
+      <p>Este es un mensaje importante para el usuario.</p>
+      <button onclick="document.getElementById('miDialogo').close()">
+        Cerrar
+      </button>
+    </dialog>
+
+    <button onclick="document.getElementById('miDialogo').showModal()">
+      Abrir diálogo
+    </button>
+
+    <h1>En cuanto a etiquetas de texto</h1>
+
+    <p>Este es un parrafo con<br />Salto de linea con br</p>
+
+    <pre>
+A diferencia de este que es con PRE y toma el formato directamente
+      sin necesidad de indicarle salto de linea
+    </pre>
+
+    <blockquote>
+      "Este blockquote se supone que es para una cita y abajo aparece quien la
+      dijo."
+      <br />
+      <cite>Jhonny Melavo</cite>
+    </blockquote>
+
+    <p>
+      El q es para hacer citas cortas <q>En un texto como parrafo con p.</q>
+    </p>
+
+    <p>
+      El cite simplemente marca el codigo <cite>CODIGO MARCADO</cite> Que yo
+      necesito que marque.
+    </p>
+
+    <p>
+      Para abreviar
+      <abbr title="Esta es la explicación de la abreviatura">ABREVIATURA</abbr>
+      usas abbr y pasando el cursor encima te enseña
+    </p>
+
+    <p>
+      Similar al anterior
+      <dfn title="Marca el texto y manda un mensaje con cursor encima"
+        >Abrevia</dfn
+      >
+    </p>
+
+    <p>
+      Para mostrar un mensaje en la consola de JavaScript, usamos
+      <code>console.log("Hola mundo");</code>
+    </p>
+
+    <p>
+      kbd indica la entrada del teclado, ejemplo: <kbd>Ctrl</kbd> +
+      <kbd>S</kbd>.
+    </p>
+
+    <p>B pone las cosas en <b>negrita</b>.</p>
+
+    <p><strong>strong:</strong> resalta las cosas</p>
+
+    <p>i resalta en <i>cursiva</i></p>
+
+    <p>Em marca texto para <em>mensaje importante</em></p>
+
+    <p>Mark pues <mark>MARCA</mark></p>
+
+    <p>small pues <small>pone pequeño el txt</small></p>
+
+    <p>Del pues <del>TACHA TEXTO</del></p>
+
+    <p>Indica novedades subrayando o tachando <ins>COSAS NUEVAS</ins></p>
+
+    <p>Indica subindices como para elementos quimicos como H<sub>2</sub>O</p>
+
+    <p>Lo mismo que el anterior pero para superindice E = mc<sup>2</sup></p>
+
+    <p>
+      Datetime permite leer el valor para las maquinas y el texto para humanos:
+      <time datetime="2025-09-23">23 de septiembre de 2025</time>
+    </p>
+
+    <p>
+      Data da un valor para maquinas y texto legible para humanos:
+      <data value="25">25°C</data>
+    </p>
+
+    <p>
+      Span es un control en la linea para aplicar estilos
+      <span style="color: red; font-weight: bold">EJEMPO</span>
+    </p>
+
+    <h1>En cuanto a Etiquetas de enlace</h1>
+
+    <pre>Esto ya lo habia usado despues pero sirve para poner un enlace</pre>
+    <a href="https://www.w3schools.com/html/default.asp"
+      ><br />Página de referencia</a
+    >
+
+    <h2>Mapa interactivo sencillo</h2>
+    <img
+      src="Imagenes/Mapa.png"
+      usemap="#mundial"
+      alt="Mapa Mundi"
+      width="600"
+      height="300"
+    />
+
+    <map name="mundial">
+      <!-- América del Norte -->
+      <area
+        shape="rect"
+        coords="50,50,150,120"
+        href="https://es.wikipedia.org/wiki/Am%C3%A9rica_del_Norte"
+        alt="América del Norte"
+      />
+
+      <!-- Europa -->
+      <area
+        shape="rect"
+        coords="400,50,480,120"
+        href="https://es.wikipedia.org/wiki/Europa"
+        alt="Europa"
+      />
+
+      <!-- Asia -->
+      <area
+        shape="rect"
+        coords="500,60,590,150"
+        href="https://es.wikipedia.org/wiki/Asia"
+        alt="Asia"
+      />
+    </map>
 
     <footer style="text-align: right; background-color: lightblue">
-      <a href="https://www.w3schools.com/html/default.asp"
-        >Página de referencia</a
-      >
-      <pre>
-      Autor: Brandon Andrés Corella Ulate
-      Fecha: 22/9/2025
-      Carrera: Ingeniería del Software
-    </pre
-      >
       <img
         src="Imagenes/Avatar.jpg"
         alt="Texto en caso de error"
         width="300"
         height="300"
       />
+
+      <a href="https://www.w3schools.com/html/default.asp"
+        ><br />Página de referencia</a
+      >
+
+      <address>
+        Autor: Brandon Andrés Corella Ulate<br />
+        Email: <a href="mailto:brandon@example.com">brandon@example.com</a
+        ><br />
+        Dirección: San José, Costa Rica
+      </address>
     </footer>
   </body>
 </html>
