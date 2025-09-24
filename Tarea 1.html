@@ -218,7 +218,7 @@ A diferencia de este que es con PRE y toma el formato directamente
 
     <h2>Mapa interactivo sencillo</h2>
     <img
-      src="Imagenes/Mapa.png"
+      src="Imagenes/Mapa.jpg"
       usemap="#mundial"
       alt="Mapa Mundi"
       width="600"
@@ -250,6 +250,78 @@ A diferencia de este que es con PRE y toma el formato directamente
         alt="Asia"
       />
     </map>
+
+    <h1>En cuanto a etiquetas de Imagen</h1>
+
+    <h2>Ya lo he utilizado antes pero sirve como ejemplo para IMG</h2>
+    <div style="background-color: lightgray; padding: 10px; text-align: center">
+      <img
+        src="Imagenes/image.png"
+        alt="Texto alternativo"
+        width="300"
+        height="200"
+        style="text-align: center"
+      />
+    </div>
+
+    <h2>
+      Ejemplo de <strong>PICTURE</strong> usando la misma imagen con diferentes
+      tamaños
+    </h2>
+
+    <picture>
+      <!-- Imagen para pantallas grandes -->
+      <source media="(min-width: 800px)" srcset="Imagenes/image.png 2x" />
+
+      <!-- Imagen para pantallas medianas -->
+      <source media="(min-width: 400px)" srcset="Imagenes/image.png 1.5x" />
+
+      <!-- Imagen por defecto para pantallas pequeñas -->
+      <img
+        src="Imagenes/image.png"
+        alt="Ejemplo de imagen responsive"
+        width="300"
+      />
+    </picture>
+
+    <h2>Ejemplo de canvas</h2>
+    <canvas
+      id="miCanvas"
+      width="200"
+      height="100"
+      style="border: 1px solid #000"
+    >
+      Tu navegador no soporta canvas.
+    </canvas>
+
+    <script>
+      const canvas = document.getElementById("miCanvas");
+      const ctx = canvas.getContext("2d");
+
+      // Dibujar un rectángulo azul
+      ctx.fillStyle = "blue";
+      ctx.fillRect(20, 20, 150, 50);
+    </script>
+
+    <h2>Ejemplo de svg</h2>
+    <svg width="200" height="100" style="border: 1px solid #000">
+      <!-- Un círculo rojo -->
+      <circle cx="50" cy="50" r="30" fill="red" />
+
+      <!-- Un rectángulo verde -->
+      <rect x="100" y="20" width="80" height="60" fill="green" />
+    </svg>
+
+    <h1>En cuanto a etiquetas multimedia</h1>
+
+    <h2>Ejemplo de audio</h2>
+
+    <audio controls>
+      <source src="Audio/Hijo de la Luna.mp3" type="audio/mpeg" />
+      Tu navegador no soporta la reproducción de audio.
+    </audio>
+
+    <h3>PIE DE PAGINA</h3>
 
     <footer style="text-align: right; background-color: lightblue">
       <img
